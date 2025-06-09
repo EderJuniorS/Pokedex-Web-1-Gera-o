@@ -1,0 +1,253 @@
+/* Lista ordenada dos Pokemons */
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fire {
+    background: linear-gradient(to right, #ff0000, #ffa500, #ffff00);
+}
+
+.grass {
+    background: linear-gradient(to right, #008000, #90ee90);
+}
+
+.electric {
+    background: linear-gradient(to right, #ffff00, #daa520);
+}
+
+.water {
+    background: linear-gradient(to right, #0000ff, #40e0d0);
+}
+
+.normal {
+    background: linear-gradient(to right, #ffffff, #964b00, #808080);
+}
+
+.bug {
+    background: linear-gradient(to right, #008000, #ffff00, #964b00);
+}
+
+.poison {
+    background: linear-gradient(to right, #993399, #008000);
+}
+
+.fighting {
+    background: linear-gradient(to right, #964b00, #ff0000);
+}
+
+.psychic {
+    background: linear-gradient(to right, #ff007f, #993399, #0000ff);
+}
+
+.rock {
+    background: linear-gradient(to right, #964b00, #808080, #000000);
+}
+
+.ground {
+    background: linear-gradient(to right, #964b00, #f5f5dc, #808080);
+}
+
+.fairy {
+    background: linear-gradient(to right, #ff007f, #ffffff);
+}
+
+.dragon {
+    background: linear-gradient(to right, #ff2400, #0000ff, #008000);
+}
+
+.ice {
+    background: linear-gradient(to right, #0000ff, #ffffff);
+}
+
+.steel {
+    background: linear-gradient(to right, #808080, #c0c0c0, #000000);
+}
+
+.ghost {
+    background: linear-gradient(to right, #c8a2c8, #000000, #808080);
+}
+
+.flying {
+    background: linear-gradient(to right, #0000ff, #808080, #ffffff);
+}
+
+.dark {
+    background: linear-gradient(to right, #000000, #993399, #00008b, #808080);
+}
+
+/* Informações dos pokemons */
+.pokemon {
+    margin: .5rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização dos numeros referente a cada um dos pokemons */
+.pokemon .numero {
+    color: #000000;
+    opacity: .3;
+    text-align: right;
+    font-size: .625rem;
+}
+
+/* Estilização dos nomes referente a cada um dos pokemons */
+.pokemon .nome {
+    color: #ffffff;
+    margin-bottom: .25rem;
+    text-transform: capitalize;
+}
+
+/* Estilização dos detalhes referente a cada um dos pokemons */
+.pokemon .detalhe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilização dos tipos referente a cada um dos pokemons */
+.pokemon .detalhe .tipos {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Estilização do tipo que aquele determinado pokemon pertence */
+.pokemon .detalhe .tipos .tipo {
+    color: #ffffff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+}
+
+/* Estilização da imagem dos pokemons */
+.pokemon .detalhe img {
+    max-width: 100%;
+    height: 70px;
+}
+
+/* Estilização da div que possui o botão */
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Estilização do botão */
+.pagination button {
+    background-color: #6c79db;
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+}
+
+/* Responsibilidade  tamanho de tela 2000px */
+@media screen and (max-width: 2000px) {
+    .container {
+        max-width: 2000px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Responsibilidade  tamanho de tela 1532px */
+@media screen and (max-width: 1532px) {
+    .container {
+        max-width: 1532px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Responsibilidade  tamanho de tela 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Responsibilidade  tamanho de tela 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 992px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Responsibilidade  tamanho de tela 684px */
+@media screen and (max-width: 684px) {
+    .container {
+        max-width: 684px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Responsibilidade  tamanho de tela 594px */
+@media screen and (max-width: 594px) {
+    .container {
+        max-width: 594px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Responsibilidade  tamanho de tela 350px */
+@media screen and (max-width: 350px) {
+    .container {
+        max-width: 350px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr;
+    }
+}

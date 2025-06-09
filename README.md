@@ -1,5 +1,7 @@
 # Pokedex Web - 1ª Geração
 
+![Preview do Jogo](img/Resultado-Final-Web.png)
+
 Uma aplicação web interativa que exibe os 151 Pokémon da primeira geração, com detalhes completos de cada um, consumindo dados da PokeAPI.
 
 ## ✨ Funcionalidades
